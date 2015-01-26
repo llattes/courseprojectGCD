@@ -2,7 +2,7 @@
 
 ## About the project
 
-This GitHub repository contains all the necessary files to run the scripts properly, including the UCI dataset.
+This GitHub repository contains the script for cleaning, transforming and merging the contents of the different files included in the UCI HAR Dataset. For sizing reasons, the dataset itself was not included in this repo, but you can find the URL for downloading it below.
 
 ## Important files
 
