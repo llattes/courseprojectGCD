@@ -17,4 +17,4 @@ activity_labels.txt
 features.txt
 features_info.txt
 readme.txt
-readme.html
+*.html
