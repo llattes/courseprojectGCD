@@ -37,15 +37,15 @@ Groups: Activity
 
 ## How does the script work?
 
-1. The first of all, all dataset files are read into individual Data Frames.
-2. Then, those individual dataframes are column and row-binded into a single complete Data Frame as follows:
+- The first of all, all dataset files are read into individual Data Frames.
+- Then, those individual dataframes are column and row-binded into a single complete Data Frame as follows:
 
 Feature names from `features.txt` | Subject | Activity
 --- | --- | ---
 X_train | subject_train | y_train labeled with `activity_labels.txt`
 X_test | subject_test | y_test labeled with `activity_labels.txt`
 
-3. Next, Subject and Activity are transformed into factors and labeled using the activity_labels.txt.
-4. After that, duplicated column names are removed. This allows using **dplyr's** select properly.
-5. Next, only 'mean' and 'std' columns along with Activity and Subject are stored from the 'without duplicates' Data Frame into the final_dataset variable.
-6. Finally, the data is grouped by Activity and Subject and summarized with **dplyr** using the `mean` function.
+- Next, Subject and Activity are transformed into factors and labeled using the activity_labels.txt.
+- After that, duplicated column names are removed. This allows using **dplyr's** select properly.
+- Next, only 'mean' and 'std' columns along with Activity and Subject are stored from the 'without duplicates' Data Frame into the final_dataset variable.
+- Finally, the data is grouped by Activity and Subject and summarized with **dplyr** using the `mean` function.
